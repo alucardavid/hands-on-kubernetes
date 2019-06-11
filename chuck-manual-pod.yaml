@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: chuck-manual
+spec:
+  containers:
+    - image: dpereira99/api-chuck
+      name: chuck
+      ports:
+        - containerPort: 3000
+          protocol: TCP
